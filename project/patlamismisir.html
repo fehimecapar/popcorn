@@ -1,0 +1,375 @@
+
+<head>
+    <meta charset="UTF-8">
+    <title>Patlamış Mısır!</title>
+
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <style type="text/css" media="screen">
+        body {
+            padding-top: 80px;
+            background-color:IndianRed;
+            color: White;
+        }
+        #trailer .modal-dialog {
+            margin-top: 200px;
+            width: 640px;
+            height: 480px;
+        }
+        .hanging-close {
+            position: absolute;
+            right: +12px;
+            top: +12px;
+            z-index: 9001;
+        }
+        #trailer-video {
+            width: 100%;
+            height: 100%;
+        }
+        .movie-tile {
+            margin-bottom: 20px;
+            padding-top: 20px;
+        }
+        .movie-tile:hover {
+            background-color: RosyBrown;
+            cursor: pointer;
+        }
+        .movie-tile img {
+            box-shadow: 7px 7px 12px #222;
+        }
+        .scale-media {
+            padding-bottom: 56.25%;
+            position: relative;
+        }
+        .scale-media iframe {
+            border: none;
+            height: 100%;
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 0;
+            right: 0;
+            background-color: BurlyWood;
+        }
+    </style>
+    <script type="text/javascript" charset="utf-8">
+
+        $(document).on('click', '.hanging-close, .modal-backdrop, .modal', function (event) {
+
+            $("#trailer-video-container").empty();
+        });
+
+        $(document).on('click', '.movie-tile', function (event) {
+            var trailerYouTubeId = $(this).attr('data-trailer-youtube-id')
+            var sourceUrl = 'http://www.youtube.com/embed/' + trailerYouTubeId + '?autoplay=1&html5=1';
+            $("#trailer-video-container").empty().append($("<iframe></iframe>", {
+              'id': 'trailer-video',
+              'type': 'text-html',
+              'src': sourceUrl,
+              'frameborder': 0
+            }));
+        });
+
+        $(document).ready(function () {
+          $('.movie-tile').hide().first().show("fast", function showNext() {
+            $(this).next("div").show("fast", showNext);
+          });
+        });
+    </script>
+</head>
+
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+
+    <div class="modal" id="trailer">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <a href="#" class="hanging-close" data-dismiss="modal" aria-hidden="true">
+            <img src="https://lh5.ggpht.com/v4-628SilF0HtHuHdu5EzxD7WRqOrrTIDi_MhEG6_qkNtUK5Wg7KPkofp_VJoF7RS2LhxwEFCO1ICHZlc-o_=s0#w=24&h=24"/>
+          </a>
+          <div class="scale-media" id="trailer-video-container">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container">
+      <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">Patlamış Mısır Film Fragmanları</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="Z5qWbnEVOWs" data-toggle="modal" data-target="#trailer">
+
+<img class="thumbnail-img" height="288" src="http://tr.web.img4.acsta.net/c_215_290/pictures/19/10/22/15/21/0773368.jpg" width="216">
+
+    <div><h2 class="meta-title">
+<a class="meta-title-link" href="/filmler/film-266490/">Mucize 2 Aşk</a>
+</h2><div class="meta-body">
+<div class="meta-body-item meta-body-info">
+<span class="date">6 Aralık 2019</span>
+<span class="spacer">/</span> 2s 9dk<span class="spacer">/</span>
+<span>Dram</span>
+</div>
+<div >  Yönetmen <a>Mahsun Kırmızıgül</a>
+</div>
+<div class="meta-body-item meta-body-actor light">  Oyuncular:  <span class="ACrL3NACrhbmF0Y2lsYXIvc2FuYXRjaS01MTg2OTgv">Mert Turak</span><span class="ACrL3NACrhbmF0Y2lsYXIvc2FuYXRjaS0xNzI3NC8=">Fikret Kuşkan</span>
+ <span class="ACrL3NACrhbmF0Y2lsYXIvc2FuYXRjaS03MTU3Nzcv">Biran Damla Yılmaz</span>
+</div>
+</div></div>
+    <div><div class="content-txt">
+  Mucize 2 Aşk, engelli bir adam olan Aziz ile görücü usulü olarak evlendiği Mızgin'in hayatını konu ediyor.</div></div>
+</div>
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="0GSCVxkl2Ic" data-toggle="modal" data-target="#trailer">
+
+<img  class="thumbnail-img" height="288" src="http://tr.web.img2.acsta.net/c_215_290/pictures/19/06/13/12/39/1343139.jpg" width="216">
+
+    <div><h2 class="meta-title">
+<a class="meta-title-link" href="/filmler/film-273288/">Cep Herkülü: Naim Süleymanoğlu</a>
+</h2> <div class="meta-body">
+<div class="meta-body-item meta-body-info">
+<span class="date">22 Kasım 2019</span>
+<span class="spacer">/</span> 2s 20dk <span class="spacer">/</span>
+<span class="ACrL2ZACrpbG1sZXIvdHVtLWZpbG1sZXJpL2t1bGxhbmljaS1wdWFuaS90dXItMTMwMjcv">Biyografik</span></div>
+<div class="meta-body-item meta-body-direction light">Yönetmen<a>Özer Feyzioğlu</a>
+</div>
+<div class="meta-body-item meta-body-actor light">Oyuncular:<span class="ACrL3NACrhbmF0Y2lsYXIvc2FuYXRjaS04MTQwMzYv">Hayat Van Eck</span>
+    <span class="ACrL3NACrhbmF0Y2lsYXIvc2FuYXRjaS0xNTIxMzMv">Yetkin Dikinciler</span>
+<span class="ACrL3NACrhbmF0Y2lsYXIvc2FuYXRjaS02ODgwNjgv">Selen Öztürk</span>
+</div>
+</div></div>
+    <div><div class="content-txt">
+                      Cep Herkülü: Naim Süleymanoğlu, ülkemiz ve dünya spor tarihine adını altın harflerle yazdıran efsanevi halterci Naim Sü leymanoğlu'nun hayat hikayesini konu ediyor.
+
+            </div></div>
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="457UT0ypa84" data-toggle="modal" data-target="#trailer">
+
+<img class="thumbnail-img" height="288" src="http://tr.web.img2.acsta.net/c_215_290/pictures/19/11/08/11/36/3405516.jpg" width="216"/>
+
+    <div><h2 class="meta-title">
+<a>Aman Reis Duymasın</a>
+</h2><div class="meta-body">
+<div class="meta-body-item meta-body-info">
+<span class="date">13 Aralık 2019</span>
+<span class="spacer">/</span> 1s 40dk  <span class="spacer">/</span>
+<span class="ACrL2ZACrpbG1sZXIvdHVtLWZpbG1sZXJpL2t1bGxhbmljaS1wdWFuaS90dXItMTMwMDUv">Komedi</span>
+</div>
+<div class="meta-body-item meta-body-direction light"> Yönetmen
+  <a >Onur Tan</a>
+</div>
+<div class="meta-body-item meta-body-actor light"> Oyuncular: <span class="ACrL3NACrhbmF0Y2lsYXIvc2FuYXRjaS00MzA4NTQv">Mustafa Üstündağ</span>
+ <span class="ACrL3NACrhbmF0Y2lsYXIvc2FuYXRjaS01MTg3Nzcv">Ozan Akbaba</span><span class="ACrL3NACrhbmF0Y2lsYXIvc2FuYXRjaS01MTQ0NDYv">Emir Benderlioğlu</span>
+</div>
+</div></div>
+    <div><div class="content-txt">
+                      Eşkıya Dünyaya Hükümdar Olmaz ekibi tatile çıkıyor!  </div></div>
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="Q7zvJIn96Hc" data-toggle="modal" data-target="#trailer">
+
+<img class="thumbnail-img" src="http://tr.web.img3.acsta.net/c_215_290/pictures/19/12/02/07/40/3426397.jpg" height="288" width="216"/>
+
+    <div><h2 class="meta-title">
+<a class="meta-title-link" href="/filmler/film-275807/">Kırk Yalan</a>
+</h2> <div class="meta-body">
+<div class="meta-body-item meta-body-info">
+<span class="date">20 Aralık 2019</span>
+<span class="spacer">/</span>  1s 37dk  <span class="spacer">/</span>
+<span class="ACrL2ZACrpbG1sZXIvdHVtLWZpbG1sZXJpL2t1bGxhbmljaS1wdWFuaS90dXItMTMwMDUv">Komedi</span>
+</div>
+<div class="meta-body-item meta-body-direction light">  Yönetmen
+<a>Hamdi Alkan</a>
+</div>
+<div class="meta-body-item meta-body-actor light"> Oyuncular:
+   <span class="ACrL3NACrhbmF0Y2lsYXIvc2FuYXRjaS01MTk3MTYv">Oğuzhan Uğur</span>
+     <span class="ACrL3NACrhbmF0Y2lsYXIvc2FuYXRjaS01MDQ1NjUv">Timur Acar</span>
+     <span class="ACrL3NACrhbmF0Y2lsYXIvc2FuYXRjaS00Nzk5NzYv">Sinan Bengier</span>
+</div>
+</div></div>
+    <div><div class="content-txt">
+                      Kırk Yalan, söylediği yalanlarla hayatını sördüren Tahsin'in başına gelen olayları konu ediyor.
+   </div></div>
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="AEx1fdRZD70" data-toggle="modal" data-target="#trailer">
+
+<img class="thumbnail-img" src="http://tr.web.img3.acsta.net/c_215_290/pictures/19/10/30/13/52/0959246.jpg" height="288"  width="216">
+
+    <div> <h2 class="meta-title">
+<a >Star Wars: Skywalker'ın Yükselişi</a>
+</h2><div class="meta-body">
+<div class="meta-body-item meta-body-info">
+<span class="date">20 Aralık 2019</span>
+<span class="spacer">/</span>    2s 22dk    <span class="spacer">/</span>
+<span class="ACrL2ZACrpbG1sZXIvdHVtLWZpbG1sZXJpL2t1bGxhbmljaS1wdWFuaS90dXItMTMwMjEv">Bilimkurgu</span>
+                                                                                                                                                        <span class="ACrL2ZACrpbG1sZXIvdHVtLWZpbG1sZXJpL2t1bGxhbmljaS1wdWFuaS90dXItMTMwMDEv">Macera</span>
+</div>
+<div class="meta-body-item meta-body-direction light">
+                Yönetmen     <a >J.J. Abrams</a>
+</div>
+<div class="meta-body-item meta-body-actor light">Oyuncular:    <span class="ACrL3NACrhbmF0Y2lsYXIvc2FuYXRjaS02ODMyNzYv">Daisy Ridley</span>
+  <span class="ACrL3NACrhbmF0Y2lsYXIvc2FuYXRjaS01MDI2ODEv">Adam Driver</span>
+ <span class="ACrL3NACrhbmF0Y2lsYXIvc2FuYXRjaS0xNDc5MDkv">Oscar Isaac</span>
+</div>
+</div></div>
+    <div> <div class="content-txt">
+                      Kylo Ren, Büyük Lider Snoke'u öldürmesinin ardından İlk Düzen'in yeni Büyük Lider'i olmuştur. Acımasız yönetiminin altında galaksi yavaş yavaş umutsuzluğa kapılmaktadır. Luke Skywalker'ın Güç'le birleşmesinden sonra Rey kendi içindeki gücü benimsemii, onu geçmişte tutan bağlarını kesmeyi başarmıştır.
+
+            </div></div>
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="rBxcF-r9Ibs" data-toggle="modal" data-target="#trailer">
+
+<img class="thumbnail-img" src="http://tr.web.img2.acsta.net/c_215_290/pictures/19/12/09/10/14/1288309.jpg" height="288" width="216"/>
+
+    <div><h2 class="meta-title">
+<a class="meta-title-link" href="/filmler/film-262124/">Jumanji: Yeni Seviye</a>
+</h2> <div class="meta-body">
+<div class="meta-body-item meta-body-info">
+<span class="date">13 Aralık 2019</span>
+<span class="spacer">/</span>2s 4dk <span class="spacer">/</span>
+<span class="ACrL2ZACrpbG1sZXIvdHVtLWZpbG1sZXJpL2t1bGxhbmljaS1wdWFuaS90dXItMTMwMDEv">Macera</span>
+   <span class="ACrL2ZACrpbG1sZXIvdHVtLWZpbG1sZXJpL2t1bGxhbmljaS1wdWFuaS90dXItMTMwMDUv">Komedi</span>
+</div>
+<div class="meta-body-item meta-body-direction light">    Yönetmen
+    <a class="blue-link" href="/sanatcilar/sanatci-26903/">Jake Kasdan</a>
+</div>
+<div class="meta-body-item meta-body-actor light">
+                Oyuncular:
+<span class="ACrL3NACrhbmF0Y2lsYXIvc2FuYXRjaS0zODc1NS8=">Dwayne Johnson</span>
+ <span class="ACrL3NACrhbmF0Y2lsYXIvc2FuYXRjaS0yMTk3MS8=">Jack Black</span>
+ <span class="ACrL3NACrhbmF0Y2lsYXIvc2FuYXRjaS0xMDA0Nzkv">Kevin Hart</span>
+</div>
+</div></div>
+    <div> <div class="content-txt">
+   Jumanji: Yeni Seviye, arkadaşlarını kurtarmak için kendilerini yeniden oyunun içinde bulan gençlerin maceralarını konu ediyor.
+
+            </div></div>
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="Hh72ag46ZTY" data-toggle="modal" data-target="#trailer">
+
+<img class="thumbnail-img" src="http://tr.web.img4.acsta.net/c_215_290/pictures/19/10/15/15/17/1767320.jpg" height="288"
+     width="216"/>
+
+    <div> <h2 class="meta-title">
+<a class="meta-title-link" href="/filmler/film-233713/">Karlar ülkesi 2</a>
+</h2> <div class="meta-body">
+<div class="meta-body-item meta-body-info">
+<span class="date">22 Kasım 2019</span>
+<span class="spacer">/</span> 1s 44dk <span class="spacer">/</span>
+<span class="ACrL2ZACrpbG1sZXIvdHVtLWZpbG1sZXJpL2t1bGxhbmljaS1wdWFuaS90dXItMTMwMjYv">Animasyon</span>
+</div>
+<div class="meta-body-item meta-body-direction light">  Yönetmen
+  <a >Jennifer Lee</a>
+  <span class="ACrL3NACrhbmF0Y2lsYXIvc2FuYXRjaS0yOTc0NS8= blue-link">Chris Buck</span>
+</div>
+<div class="meta-body-item meta-body-actor light">    Oyuncular
+ <span class="ACrL3NACrhbmF0Y2lsYXIvc2FuYXRjaS0xMDUxNTkv">Kristen Bell</span>
+
+  <span class="ACrL3NACrhbmF0Y2lsYXIvc2FuYXRjaS0xMzY1NTUv">Idina Menzel</span>
+  <span class="ACrL3NACrhbmF0Y2lsYXIvc2FuYXRjaS0xODI0ODQv">Josh Gad</span>
+</div>
+</div></div>
+    <div> <div class="content-txt">
+                      Karlar ülkesi 2, Arendellerin kapılarının çok ötesinde tehlikeli bir yolculuğa çıkan Elsa, Anna, Kristoff, Olaf ve Sven'in maceralarını konu ediyor.
+
+            </div></div>
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="xsL2u2ZUJ4M" data-toggle="modal" data-target="#trailer">
+
+<img  class="thumbnail-img" src="http://tr.web.img2.acsta.net/c_215_290/pictures/19/12/12/13/16/0111630.jpg" height="288"width="216">
+
+    <div><h2 class="meta-title">
+<a class="meta-title-link" href="/filmler/film-276128/">Güzelliğin Portresi</a>
+</h2><div class="meta-body">
+<div class="meta-body-item meta-body-info">
+<span class="date">13 Aralık 2019</span>
+<span class="spacer">/</span> 2s 7dk
+ <span class="spacer">/</span>
+<span class="ACrL2ZACrpbG1sZXIvdHVtLWZpbG1sZXJpL2t1bGxhbmljaS1wdWFuaS90dXItMTMwMjMv">Gerilim</span>
+</div>
+<div class="meta-body-item meta-body-direction light"> Yönetmen
+    <a >Umur Turagay</a>
+</div>
+<div class="meta-body-item meta-body-actor light">  Oyuncular:
+<span class="ACrL3NACrhbmF0Y2lsYXIvc2FuYXRjaS00OTk4Mjkv">Burçin Terzioğlu</span>
+    <span class="ACrL3NACrhbmF0Y2lsYXIvc2FuYXRjaS01MTYwMzQv">Birkan Sokullu</span>
+  <span class="ACrL3NACrhbmF0Y2lsYXIvc2FuYXRjaS00MjcyNzcv">Serkan Keskin</span>
+</div>
+</div></div>
+    <div><div class="content-txt">
+                      Güzelliğin Portresi, yıllardır görmediği babası ile ilgili aldığı haberin ardından kendisini büyük bir gizemin ortasında bulan genç bir kadının hayatına odaklanıyor.
+
+            </div></div>
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="BPXtVB2Qp-4" data-toggle="modal" data-target="#trailer">
+
+<img  class="thumbnail-img" src="http://tr.web.img4.acsta.net/c_215_290/pictures/19/03/21/08/26/4285272.jpg" height="288"  width="216">
+
+    <div><h2 class="meta-title">
+<a class="meta-title-link" href="/filmler/film-258775/">Recep İvedik 6</a>
+</h2><div class="meta-body">
+<div class="meta-body-item meta-body-info">
+<span class="date">8 Kasım 2019</span>
+<span class="spacer">/</span>  1s 49dk <span class="spacer">/</span>
+<span class="ACrL2ZACrpbG1sZXIvdHVtLWZpbG1sZXJpL2t1bGxhbmljaS1wdWFuaS90dXItMTMwMDUv">Komedi</span>
+</div>
+<div class="meta-body-item meta-body-direction light">Yönetmen
+  <a class="blue-link" href="/sanatcilar/sanatci-216118/">Togan Gökbakar</a>
+</div>
+<div class="meta-body-item meta-body-actor light"> Oyuncular:
+ <span class="ACrL3NACrhbmF0Y2lsYXIvc2FuYXRjaS0yMTY5MjUv">Şahan Gökbakar</span>
+   <span class="ACrL3NACrhbmF0Y2lsYXIvc2FuYXRjaS04NjM1OTQv">Nurullah Çelebi</span>
+   <span class="ACrL3NACrhbmF0Y2lsYXIvc2FuYXRjaS01NTA3Nzcv">Somer Karvan</span>
+</div>
+</div></div>
+    <div><div class="content-txt">
+                      Recep İvedik 6, Konya'ya giderken kendisini Kenya'da bulan Recep İvedik'in maceralarını konu ediyor.
+        </div></div>
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="F7Ug863S8dQ" data-toggle="modal" data-target="#trailer">
+
+<img  class="thumbnail-img" src="http://tr.web.img4.acsta.net/c_215_290/pictures/19/08/22/11/18/5302478.jpg" height="288" width="216"/>
+
+    <div> <h2 class="meta-title">
+<a class="meta-title-link" href="/filmler/film-179227/">Addams Ailesi</a>
+</h2><div class="meta-body">
+<div class="meta-body-item meta-body-info">
+<span class="date">6 Aralık 2019</span>
+<span class="spacer">/</span>  1s 27dk
+  <span class="spacer">/</span>
+<span class="ACrL2ZACrpbG1sZXIvdHVtLWZpbG1sZXJpL2t1bGxhbmljaS1wdWFuaS90dXItMTMwMjYv">Animasyon</span>
+</div>
+<div class="meta-body-item meta-body-direction light">Yönetmen
+ <a >Conrad Vernon</a>
+     <span >Greg Tiernan</span>
+</div>
+<div class="meta-body-item meta-body-actor light">      Oyuncular:
+       <span class="ACrL3NACrhbmF0Y2lsYXIvc2FuYXRjaS0xNDc5MDkv">Oscar Isaac</span>
+    <span class="ACrL3NACrhbmF0Y2lsYXIvc2FuYXRjaS0xMjU2My8=">Charlize Theron</span>
+  <span class="ACrL3NACrhbmF0Y2lsYXIvc2FuYXRjaS0xMDQ3MDUv">Chloe Grace Moretz</span>
+</div>
+</div></div>
+    <div><div class="content-txt">
+                      Film, büyük bir kutlamanın eşiğindeyken beklenmedik durumlarla karşılaşan Addams Ailesi'nin hayatına odaklanıyor.
+   </div></div>
+</div>
+
+    </div>
+  </body>
+</html>
